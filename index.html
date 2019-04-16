@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<script src="script.js"></script>
+</head>
+<body>
+
+	<form id="initial">
+		<input type="text" id="broj1" value=" ">
+		<span id="operator">
+		</span>
+		<input type="text" id="broj2" value=" ">
+		<span id="jednako">
+		</span>
+		<input type="hidden" name="resenje" id="broj3">
+	</form>
+	<form>
+		<input type="button" value="7" onclick="moveNumbers(value)">
+		<input type="button" value="8" onclick="moveNumbers(value)">
+		<input type="button" value="9" onclick="moveNumbers(value)">
+		<input type="button" value="*" onclick="moveOperator(value)"><br>
+		<input type="button" value="4" onclick="moveNumbers(value)">
+		<input type="button" value="5" onclick="moveNumbers(value)">
+		<input type="button" value="6" onclick="moveNumbers(value)">
+		<input type="button" value="-" onclick="moveOperator(value)"><br>
+		<input type="button" value="1" onclick="moveNumbers(value)">
+		<input type="button" value="2" onclick="moveNumbers(value)">
+		<input type="button" value="3" onclick="moveNumbers(value)">
+		<input type="button" value="+" onclick="moveOperator(value)"><br>
+		<input type="button" value="0" onclick="moveNumbers(value)"><br>
+		<input type="button" value="/" onclick="moveOperator(value)">
+		<input type="button" value="C" onclick="resetuj()"><br>
+		<input type="button" value="=" onclick="calcul()">
+	</form>
+</body>
+</html>
