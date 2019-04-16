@@ -1,7 +1,28 @@
+var curId;
+function setId(id){
+	curId = id;
+}
+
 function moveNumbers(num){
-	var txt = document.getElementById("broj1").value;
-	txt = txt+ num;
-	document.getElementById("broj1").value=txt;
+	var test = isFocused();
+	if(test){
+		var elemId = curId;
+		var txt = document.getElementById(elemId).value;
+		txt = txt + num;
+		document.getElementById(elemId).value=txt;
+	}
+}
+
+function isFocused(){
+	var el1 = "broj1";
+	var inFocus = curId;
+	var el2 = "broj2";
+	if(el1===inFocus || el2===inFocus){
+		return true;
+	}else{
+		window.alert("Morate fokusirati na textbox.");
+		return false;
+	}
 }
 
 function moveOperator(op){

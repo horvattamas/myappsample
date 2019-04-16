@@ -7,31 +7,29 @@
 <body>
 
 	<form id="initial">
-		<input type="text" id="broj1" value=" ">
+		<input type="text" id="broj1" value=" " onblur="setId(this.id)">
 		<span id="operator">
 		</span>
-		<input type="text" id="broj2" value=" ">
+		<input type="text" id="broj2" value=" " onblur="setId(this.id)">
 		<span id="jednako">
 		</span>
-		<input type="hidden" name="resenje" id="broj3">
-	</form>
-	<form>
-		<input type="button" value="7" onclick="moveNumbers(value)">
-		<input type="button" value="8" onclick="moveNumbers(value)">
-		<input type="button" value="9" onclick="moveNumbers(value)">
-		<input type="button" value="*" onclick="moveOperator(value)"><br>
-		<input type="button" value="4" onclick="moveNumbers(value)">
-		<input type="button" value="5" onclick="moveNumbers(value)">
-		<input type="button" value="6" onclick="moveNumbers(value)">
-		<input type="button" value="-" onclick="moveOperator(value)"><br>
-		<input type="button" value="1" onclick="moveNumbers(value)">
-		<input type="button" value="2" onclick="moveNumbers(value)">
-		<input type="button" value="3" onclick="moveNumbers(value)">
-		<input type="button" value="+" onclick="moveOperator(value)"><br>
-		<input type="button" value="0" onclick="moveNumbers(value)"><br>
-		<input type="button" value="/" onclick="moveOperator(value)">
-		<input type="button" value="C" onclick="resetuj()"><br>
-		<input type="button" value="=" onclick="calcul()">
+		<input type="hidden" name="resenje" id="broj3"><br>
+		<button type="button" value="7" onclick="moveNumbers(value)">7</button>
+		<button type="button" value="8" onclick="moveNumbers(value)">8</button>
+		<button type="button" value="9" onclick="moveNumbers(value)">9</button>
+		<button type="button" value="*" onclick="moveOperator(value)">*</button><br>
+		<button type="button" value="4" onclick="moveNumbers(value)">4</button>
+		<button type="button" value="5" onclick="moveNumbers(value)">5</button>
+		<button type="button" value="6" onclick="moveNumbers(value)">6</button>
+		<button type="button" value="-" onclick="moveOperator(value)">-</button><br>
+		<button type="button" value="1" onclick="moveNumbers(value)">1</button>
+		<button type="button" value="2" onclick="moveNumbers(value)">2</button>
+		<button type="button" value="3" onclick="moveNumbers(value)">3</button>
+		<button type="button" value="+" onclick="moveOperator(value)">+</button><br>
+		<button type="button" value="0" onclick="moveNumbers(value)">0</button><br>
+		<button type="button" value="/" onclick="moveOperator(value)">/</button>
+		<button type="button" value="C" onclick="resetuj()">Clear</button><br>
+		<button type="button" value="=" onclick="calcul()">=</button>
 	</form>
 </body>
 </html>
