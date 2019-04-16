@@ -18,14 +18,14 @@ function resetuj(){
 }
 
 function calcul(){
-	document.getElementById("jednako").innerHTML="=";
-	document.getElementById("broj3").type="text";
 	var operator = document.getElementById("operator").textContent;
 	var br1 = document.getElementById("broj1").value;
 	var br2 = document.getElementById("broj2").value;
 	if(operator == "/" && parseInt(br2, 10)==0){
-		br3 = "Deljenje sa nulom je nemoguce!";
+		window.alert("Deljenje sa nulom je nemoguce!");
 	}else{
+		document.getElementById("jednako").innerHTML="=";
+		document.getElementById("broj3").type="text";
 		var pom = br1+operator+br2;
 		var br3 = eval(pom);		
 	}
