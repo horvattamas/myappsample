@@ -65,19 +65,17 @@ parses the numbers into integers and calculates the result.
 function calculate(number1, operator, number2){
 	const num1 = parseInt(number1, 10);
 	const num2 = parseInt(number2, 10);
-	let result;
 	if(operator === "+"){
-		result = num1 + num2;
+		return num1 + num2;
 	}else if(operator === "-"){
-		result = num1 - num2;
+		return num1 - num2;
 	}else if(operator === "*"){
-		result = num1 * num2;
+		return num1 * num2;
 	}else if(operator === "/"){
 		if(num2 === 0){
 			window.alert("Division by 0 is not possible.");
 		}else{
-			result = num1 / num2;
+			return num1 / num2;
 		}
 	}
-	return result;
 }
