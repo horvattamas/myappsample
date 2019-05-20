@@ -7,26 +7,25 @@
 <body>
 
 	<form id="initial">
-		<input type="text" id="firstNumber" value=" " onblur="setId(this.id)">
-		<span id="operator">
-		</span>
-		<input type="text" id="secondNumber" value=" " onblur="setId(this.id)">
+		<input type="text" id="expression" onblur="setId(this.id)" size="30pt">
 		<span id="equals">
 		</span><br>
-		<button type="button" value="7" onclick="moveNumber(value)">7</button>
-		<button type="button" value="8" onclick="moveNumber(value)">8</button>
-		<button type="button" value="9" onclick="moveNumber(value)">9</button>
-		<button type="button" value="*" onclick="moveOperator(value)">*</button><br>
-		<button type="button" value="4" onclick="moveNumber(value)">4</button>
-		<button type="button" value="5" onclick="moveNumber(value)">5</button>
-		<button type="button" value="6" onclick="moveNumber(value)">6</button>
-		<button type="button" value="-" onclick="moveOperator(value)">-</button><br>
-		<button type="button" value="1" onclick="moveNumber(value)">1</button>
-		<button type="button" value="2" onclick="moveNumber(value)">2</button>
-		<button type="button" value="3" onclick="moveNumber(value)">3</button>
-		<button type="button" value="+" onclick="moveOperator(value)">+</button><br>
-		<button type="button" value="0" onclick="moveNumber(value)">0</button><br>
-		<button type="button" value="/" onclick="moveOperator(value)">/</button>
+		<button type="button" value="7" onclick="moveValue(value)">7</button>
+		<button type="button" value="8" onclick="moveValue(value)">8</button>
+		<button type="button" value="9" onclick="moveValue(value)">9</button>
+		<button type="button" value="*" onclick="moveValue(value)">*</button><br>
+		<button type="button" value="4" onclick="moveValue(value)">4</button>
+		<button type="button" value="5" onclick="moveValue(value)">5</button>
+		<button type="button" value="6" onclick="moveValue(value)">6</button>
+		<button type="button" value="-" onclick="moveValue(value)">-</button><br>
+		<button type="button" value="1" onclick="moveValue(value)">1</button>
+		<button type="button" value="2" onclick="moveValue(value)">2</button>
+		<button type="button" value="3" onclick="moveValue(value)">3</button>
+		<button type="button" value="+" onclick="moveValue(value)">+</button><br>
+		<button type="button" value="0" onclick="moveValue(value)">0</button><br>
+		<button type="button" value="/" onclick="moveValue(value)">/</button>
+		<button type="button" value="-" onclick="moveValue(value)">+-</button>
+		<button type="button" value="bckspc" onclick="backspace()"><-</button>
 		<button type="button" value="C" onclick="resetCalculator()">Clear</button><br>
 		<button type="button" value="=" onclick="writeResult()">=</button>
 	</form>
